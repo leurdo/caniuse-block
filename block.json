@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "leurdo/caniuse-block",
+  "version": "0.1.0",
+  "title": "Caniuse Block",
+  "category": "widgets",
+  "icon": "analytics",
+  "description": "CanIUse table embed",
+  "supports": {
+	"html": false
+  },
+  "textdomain": "caniuse-block",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+	"feature": {
+	  "type": "object"
+	},
+	"bVersions": {
+	  "type": "string",
+	  "default": "current"
+	}
+  }
+}
