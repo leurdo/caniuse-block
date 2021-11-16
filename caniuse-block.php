@@ -24,8 +24,10 @@ function create_block_caniuse_block_block_init() {
 	register_block_type( __DIR__, array(
 		'render_callback' => 'ciu_render_cb',
 	) );
+	wp_set_script_translations( 'leurdo-caniuse-block-editor-script', 'caniuse-block', plugin_dir_path( __FILE__ ) . 'languages' );
 }
-add_action( 'init', 'create_block_caniuse_block_block_init' );
+
+add_action( 'init', 'create_block_caniuse_block_block_init', 999 );
 
 function ciu_enqueue_scripts() {
 	wp_register_script( 'ciu-js', '//cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js', array(), null, true );
@@ -38,3 +40,4 @@ function ciu_render_cb( $attributes, $content ) {
 
 	return $content;
 }
+

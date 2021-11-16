@@ -11,7 +11,7 @@
 	"html": false
   },
   "textdomain": "caniuse-block",
-  "editorScript": "file:./build/index.js",
+  "editorScript": "file:build/index.js",
   "editorStyle": "file:./build/index.css",
   "style": "file:./build/style-index.css",
   "attributes": {
@@ -21,6 +21,16 @@
 	"bVersions": {
 	  "type": "string",
 	  "default": "current"
+	}
+  },
+  "example": {
+	"attributes": {
+	  "feature": {
+		"id": "once-event-listener",
+		"title": "\u0022once\u0022 event listener option",
+		"dataSource": "caniuse"
+	  },
+	  "bVersions": "current"
 	}
   }
 }
